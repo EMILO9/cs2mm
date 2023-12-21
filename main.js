@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 (async () => {
   const db = await require("./initializers/mongodb")();
   require("./initializers/appMiddlewares")(app, express);
-  await require("./initializers/initAPI.js")(app, db);
+  await require("./initializers/initRoutes.js")(app, db);
   require("./initializers/404Handler.js")(app);
   require("./initializers/errorHandler.js")(app);
   require("./initializers/initSocket.js")(server, db);
