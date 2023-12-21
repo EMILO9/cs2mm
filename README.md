@@ -1,4 +1,3 @@
-"
 This is a Node.js application that uses Express.js for server-side logic, MongoDB for database, and Socket.IO for real-time communication. The application is structured in a modular way, separating concerns into different modules such as initializers, loggers, routes, and views.
 
 ## Getting Started
