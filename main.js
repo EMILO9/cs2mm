@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
   require("./initializers/404Handler.js")(app);
   require("./initializers/errorHandler.js")(app);
   require("./initializers/initSocket.js")(server, db);
-  await require("./initializers/initServer")(app);
+  await require("./initializers/initServer")(server);
 })().catch(error => {
   logger.error(error);
   process.exit(1);
