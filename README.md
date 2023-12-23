@@ -1,39 +1,35 @@
-This is a Node.js application that uses Express.js for server-side logic, MongoDB for database, and Socket.IO for real-time communication. The application is structured in a modular way, separating concerns into different modules such as initializers, loggers, routes, and views.
+## Setup & Installation
 
-## Getting Started
+Clone the project
 
-### Prerequisites
+```bash
+  git clone https://github.com/EMILO9/cs2mm.git
+```
 
-- Node.js and npm
-- A MongoDB instance
+Go to the project directory
 
-### Setup & Installation
+```bash
+  cd cs2mm
+```
 
-1. **Clone the repository**
-   \```sh
-   git clone <repository-url>
-   \```
+Install dependencies
 
-2. **Install the dependencies**
-   \```sh
-   npm install
-   \```
+```bash
+  npm install
+```
 
-3. **Set up environment variables**
-   Create a `.env` file in the root directory of the project and add the following:
-   \```sh
-   NODE_ENV=development
-   PORT=4000
-   MONGO_URI=<your-mongodb-uri>
-   \```
+Set up environment variables
 
-4. **Start the server**
-   \```sh
-   npm start
-   \```
+Create a `.env` file in the root directory of the project and add the following:
 
-## Built With
+```bash
+  NODE_ENV=development
+  PORT=4000
+  MONGO_URI=<your-mongodb-uri>
+```
 
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Socket.IO](https://socket.io/)
+Start the server
+
+```bash
+  npm start || npm run dev
+```
