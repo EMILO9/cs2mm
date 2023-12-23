@@ -31,5 +31,9 @@ Create a `.env` file in the root directory of the project and add the following:
 Start the server
 
 ```bash
-  npm start || npm run dev
+  npm start
+```
+
+```bash
+  npm run dev
 ```
