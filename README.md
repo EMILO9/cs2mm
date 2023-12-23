@@ -1,3 +1,10 @@
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/).
+- You have access to a MongoDB database, and you have your MongoDB URI. If you don't have a MongoDB database set up, you can create a free database on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+
 ## Setup & Installation
 
 Clone the project
@@ -37,3 +44,25 @@ Start the server
 ```bash
   npm run dev
 ```
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
