@@ -7,7 +7,7 @@ const connect = async () => {
   while (retries < maxRetries) {
     try {
       const client = await mongoClient.connect(process.env.MONGO_URI);
-      const db = client.db();
+      const db = client.db("sample_airbnb");
       return db;
     } catch (error) {
       if (!errors.includes(error.name)) throw error;
