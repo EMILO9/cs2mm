@@ -13,7 +13,7 @@ const connect = async () => {
       if (!errors.includes(error.name)) throw error;
       retries++;
       if (retries === maxRetries) throw error;
-      await new Promise(resolve => setTimeout(resolve, delay));
+      await new Promise((resolve) => setTimeout(resolve, delay));
       delay *= 2;
     }
   }
