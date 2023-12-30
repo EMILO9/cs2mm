@@ -25,7 +25,6 @@ Create a `.env` file in the root directory of the project and add the following:
 ```bash
   NODE_ENV=development
   PORT=4000
-  CORS_ORIGIN=http://localhost:3000
   MONGO_URI=<your-mongodb-uri>
 ```
 
